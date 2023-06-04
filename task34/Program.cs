@@ -27,6 +27,7 @@ int[] numbers = new int[massiv];
 int count = 0;
 
 FillArray(numbers);
+System.Console.Write("Массив - ");
 PrintArray(numbers);
 
 for (int i = 0; i < numbers.Length; i++)
