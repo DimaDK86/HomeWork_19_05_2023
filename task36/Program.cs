@@ -34,4 +34,4 @@ PrintArray(numbers);
 for (int i = 0; i < numbers.Length; i+=2)
     sum = sum + numbers[i];
 
-System.Console.WriteLine($"Сумма элементов массива, стоящих на нечётных позициях равна = {sum}");
+System.Console.WriteLine($"Сумма элементов массива, стоящих на нечётных позициях равна - {sum}");
