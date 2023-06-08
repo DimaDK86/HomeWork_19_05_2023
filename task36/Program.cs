@@ -24,8 +24,8 @@ void PrintArray(int[] array)
 
 
 Console.WriteLine("Введите размер массива");
-int massiv = Convert.ToInt32(Console.ReadLine());
-int[] numbers = new int[massiv];
+int array = Convert.ToInt32(Console.ReadLine());
+int[] numbers = new int[array];
 int sum = 0;
 
 FillArray(numbers);
