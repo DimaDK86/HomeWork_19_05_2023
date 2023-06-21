@@ -3,22 +3,12 @@
 // N = 5 -> "5, 4, 3, 2, 1"
 // N = 8 -> "8, 7, 6, 5, 4, 3, 2, 1"
 
-void Numbers(int num, int count)
+string SummaRec(int num)
 {
-    if (count > num)
-    {
-        return;
-    }
-    else
-    {
-        Numbers(num, count + 1);
-        System.Console.Write(count + ", ");
-    }
+    if (num == 0) return string.Empty;
+    else return $"{num}, " + SummaRec(num - 1);
 }
 
-
-Console.Clear();
-System.Console.Write("Введите целое число: ");
+System.Console.WriteLine("Введите целое число ");
 int num = Convert.ToInt32(Console.ReadLine());
-int count = 1;
-Numbers(num, count);
+System.Console.WriteLine(SummaRec(num));
